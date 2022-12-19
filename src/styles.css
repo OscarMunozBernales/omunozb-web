@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
-body{
+*{
   font-family: 'Inconsolata', monospace;
-  background-color: #222A6B;
-  color: #FFFFFF;
+  background-color: #000000 !important;
+  color: #FFFFFF !important;
 }
