@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { NotfoundComponent } from './utils/notfound/notfound.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', loadChildren: () => import('./component/home/home.module').then(m => m.HomeModule) },
-  { path: 'about-me', loadChildren: () => import('./component/aboutme/aboutme.module').then(m => m.AboutmeModule) },
-  { path: 'projects', loadChildren: () => import('./component/projects/projects.module').then(m => m.ProjectsModule) },
-  { path: 'experience', loadChildren: () => import('./component/experience/experience.module').then(m => m.ExperienceModule) },
-  { path: 'skills', loadChildren: () => import('./component/skills/skills.module').then(m => m.SkillsModule) }
+  { path: 'home', loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule) },
+  { path: 'about', loadChildren: () => import('./pages/about/about.module').then(m => m.AboutModule) },
+  { path: 'experience', loadChildren: () => import('./pages/experience/experience.module').then(m => m.ExperienceModule) },
+  { path: 'projects', loadChildren: () => import('./pages/projects/projects.module').then(m => m.ProjectsModule) },
+  { path: 'skills', loadChildren: () => import('./pages/skills/skills.module').then(m => m.SkillsModule) },
+  { path: '**', component: NotfoundComponent }
 ];
 
 @NgModule({

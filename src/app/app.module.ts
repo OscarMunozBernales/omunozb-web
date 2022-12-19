@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NavbarComponent } from './utils/navbar/navbar.component';
+import { NotfoundComponent } from './utils/notfound/notfound.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    NotfoundComponent
   ],
   imports: [
     BrowserModule,
