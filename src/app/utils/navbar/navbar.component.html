@@ -1,27 +1,31 @@
-<nav class="navbar navbar-expand-lg bg-dark omunoz_navbar">
-  <div class="container-fluid">
-    <a class="navbar-brand">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+<header>
+  <nav class="main-menu">
+    <div class="icon-rrss">
+      <a id="icon-github" [href]="LINK_LINKEDIN" target="_blank"> <i class="fa-brands fa-github"></i></a>
+      <a id="icon-linkedin" [href]="LINK_GITHUB" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+    <div class="sub-menu" id="sub-menu">
+      <ul class="navbar">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" [routerLink]="['/home']" routerLinkActive="active">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" [routerLink]="['/about']" routerLinkActive="active">Acerca de mi</a>
+          <a class="nav-link active" aria-current="page" [routerLink]="['/about']" routerLinkActive="active">Acerca de
+            mi</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" [routerLink]="['/experience']" routerLinkActive="active">Experiencia</a>
+          <a class="nav-link active" aria-current="page" [routerLink]="['/experience']"
+            routerLinkActive="active">Experiencia</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" [routerLink]="['/projects']" routerLinkActive="active">Proyectos</a>
+          <a class="nav-link active" aria-current="page" [routerLink]="['/projects']"
+            routerLinkActive="active">Proyectos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" [routerLink]="['/skills']" routerLinkActive="active">Habilidades</a>
+          <a class="nav-link active" aria-current="page" [routerLink]="['/skills']"
+            routerLinkActive="active">Habilidades</a>
         </li>
       </ul>
     </div>
-  </div>
-</nav>
+  </nav>
+</header>

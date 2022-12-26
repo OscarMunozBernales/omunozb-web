@@ -1,3 +1,40 @@
-.omunoz_navbar{
-  background-color: #000000 !important;
+.main-menu {
+  width: 100%;
+  height: 50px;
+  display: flex;
+}
+
+div.icon-rrss>a {
+  text-decoration: none;
+  font-size: 25px;
+  padding: 0px 20px;
+}
+
+div.icon-rrss {
+  align-self: center;
+  padding: 0px 10px;
+  display: flex;
+  justify-content: center;
+  width: 20%;
+}
+
+div.sub-menu {
+  align-self: center;
+  padding-right: 20px;
+  width: 80%;
+}
+
+div.sub-menu>ul.navbar {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+div.sub-menu>ul.navbar>li.nav-item {
+  padding: 0px 40px;
+}
+
+div.sub-menu>ul.navbar>li.nav-item>a {
+  text-decoration: none;
 }

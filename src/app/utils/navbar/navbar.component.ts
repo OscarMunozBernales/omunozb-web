@@ -7,6 +7,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit{
+
+  public LINK_LINKEDIN: string = 'https://www.linkedin.com/in/omunozb/';
+  public LINK_GITHUB: string = 'https://github.com/OscarMunozBernales';
   constructor(){}
 
   ngOnInit(): void {}
